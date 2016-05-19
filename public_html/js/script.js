@@ -40,3 +40,12 @@ function summe(zahlen) {
 }
 console.log("gesamtsumme:"+summe(zahlen));
 summe(zahlen);
+
+//1.4
+function ersetzeZahl(i,n,zahlen) {
+    if (i<array.length) {
+        zahlen[i]=n;
+    }
+    else 
+        console.log("array out of bounds!!!");
+}
