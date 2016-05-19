@@ -9,9 +9,21 @@ and open the template in the editor.
         <title>WebApps Uebung 4</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script type="application/javascript">
+            function loadJS(file) {
+                var jsElm = document.createElement("script");
+                jsElm.type ="application/javascript";
+                jsElm.src = file;
+                document.body.appendChild(jsElm);
+            }
+        </script>
     </head>
     <body>
         <div>TODO write Javascript</div>
-         <script language="javascript" type="text/javascript" src="js/script.js"></script>
+        <a href="cellularAutomat.html">Automat</a>
+        <button onClick="loadJS('js/script.js');">Uebung4-1</button>
+        <button onClick="loadJS('js/script.js');">Automat</button>
+
     </body>
 </html>
