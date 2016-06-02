@@ -17,7 +17,9 @@ document.write("</pre>");
 //functions
 
 function arrayFill(array,x,y){
+	for (var i=0;i<=y;i++) {
 		array[i]=new Array();
+		for (var j=0;j<=x;j++) {
 			array[i][j]=0;
 		}
 	}
