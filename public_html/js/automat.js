@@ -34,20 +34,20 @@ function arrayFill(array,x,y){
 }
 
 function getLife(array,x,y){
-	var value;
+    var value;
     var temp;
     var counter;
-	for(var row = 1; row <=y;row++){
-    	for(var col = 0; col <= x ; col++){
-        value = 0;
-        counter = 0;
-        	if(col === 0){
-            	value = array[row-1][0]+array[row-1][1]+array[row-1][2]
+    for(var row = 1; row <=y;row++){
+        for(var col = 0; col <= x ; col++){
+            value = 0;
+            counter = 0;
+            if(col === 0){
+                value = array[row-1][0]+array[row-1][1]+array[row-1][2];
         	}else if(col === 1){
-        		value = array[row-1][0]+array[row-1][1]+array[row-1][2]+array[row-1][3]
+                    value = array[row-1][0]+array[row-1][1]+array[row-1][2]+array[row-1][3];
         	}else{
-        		do {
-                	temp = col-2+counter;
+                    do {
+                    temp = col-2+counter;
                     value += array[row-1][temp];
 
                     if(temp-1 === x){
